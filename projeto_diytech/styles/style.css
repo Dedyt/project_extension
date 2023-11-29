@@ -1,0 +1,252 @@
+/* Definição de fontes e estilos de texto */
+body {
+  max-width: 100%;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.50rem;
+}
+
+/* Cores */
+a {
+  text-decoration: none;
+}
+
+.container {
+  position: relative;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* Navbar */
+.navbar,
+.navbar > .container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar {
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  padding: 1rem 1.15rem;
+  border-bottom: 1px solid #eceef3;
+}
+
+.navbar-header {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-toggler {
+  border-radius: 5px;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  display: none;
+  outline: none;
+}
+
+.navbar-toggler span {
+  height: 2px;
+  width: 22px;
+  background-color: #3c4250;
+  display: block;
+}
+
+.navbar-toggler span:not(:last-child) {
+  margin-bottom: 0.2rem;
+}
+
+.navbar-header > a {
+  font-weight: 500;
+  color: #3c4250;
+}
+
+/* Navbar menu */
+.navbar-menu {
+  display: flex;
+  align-items: center;
+  flex-basis: auto;
+  flex-grow: 1;
+}
+
+/* Navbar navigation */
+.navbar-nav {
+  margin-left: auto;
+  flex-direction: row;
+  display: flex;
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
+
+.navbar-nav li a {
+  color: #3c4250;
+  text-decoration: none;
+  display: inline-block;
+  padding: 0.5rem 1rem;
+}
+
+.navbar-nav li a:hover {
+  color: #12d46a;
+}
+
+/* Navbar dropdown */
+.navbar-dropdown .dropdown {
+  list-style: none;
+  position: absolute;
+  top: 150%;
+  left: 0;
+  background-color: #fff;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  min-width: 160px;
+  width: auto;
+  white-space: nowrap;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  z-index: 99999;
+  border-radius: 0.75rem;
+  display: none;
+}
+
+.navbar-dropdown .dropdown.show {
+  display: block !important;
+}
+
+.navbar-dropdown .dropdown li a {
+  color: #3c4250;
+  padding: 0.25rem 1rem;
+  display: block;
+}
+
+/* Navbar dropdown separator */
+.navbar-dropdown .dropdown .separator {
+  height: 1px;
+  width: 100%;
+  margin-top: 9px;
+  margin-bottom: 9px;
+  background-color: #eceef3;
+}
+
+/* Custom */
+.navbar .navbar-header > a span {
+  color: #12d46a;
+}
+
+.navbar .navbar-header h4 {
+  font-weight: bold;
+  font-size: 1.80rem;
+}
+
+/* Animação: Textos */
+.welcome-text {
+  text-align: center;
+  font-size: 24px;
+  animation: fadeIn 2s ease-in-out;
+}
+
+/* Estilo para o novo texto com a classe "main-text" */
+.main-text {
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 20px;
+  animation: differentAnimation 2s ease-in-out;
+}
+
+/* Adicione uma media query para ajustar o estilo em telas menores */
+@media screen and (max-width: 600px) {
+  .main-text {
+      margin-right: 5%;
+      margin-left: 5%;
+  }
+}
+
+/* Defina a animação diferente */
+@keyframes differentAnimation {
+  0% {
+      opacity: 0;
+      transform: translateX(-20px);
+  }
+  100% {
+      opacity: 1;
+      transform: translateX(0);
+  }
+}
+
+/* Imagens */
+/* Adicione estilos para a imagem */
+.welcome-message img {
+  width: 100%; /* Alterado para 100% para ocupar a largura total do contêiner */
+  margin-bottom: 20px; /* Adicionado espaço inferior entre a imagem e o texto */
+  animation: differentAnimation 2s ease-in-out;
+}
+
+/* footer */
+footer {
+  background-color: #12d46a;
+  color: #fff;
+  padding: 20px 0;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.footer-content h3 {
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+/* Estilize os links para ficarem lado a lado */
+.footer-links {
+  list-style: none;
+  padding: 0;
+  display: flex;
+}
+
+.footer-links li {
+  margin-right: 10px;
+}
+
+.footer-links li:last-child {
+  margin-right: 0;
+}
+
+.footer-links a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+  text-decoration-color: black;
+}
+
+/* Ajuste o espaçamento entre as linhas do texto no rodapé */
+.footer-content p {
+  line-height: 1;
+}
+
+/* Alinhe o texto à direita */
+.footer-right {
+  text-align: right;
+}
+
+/* Adicione estilos para a imagem */
+.welcome-message img {
+  max-width: 100%;
+  height: auto;
+  margin: 20px 0; /* Adicionado espaço superior e inferior */
+  float: right; /* Coloca a imagem à direita do texto */
+  margin-left: 20px; /* Adiciona uma margem à esquerda da imagem para separá-la do texto */
+  animation: differentAnimation 2s ease-in-out;
+}
+
+/* Ajuste o espaçamento entre as linhas do texto para garantir que não haja sobreposição com a imagem */
+.main-text {
+  line-height: 1.6; /* Ajuste conforme necessário */
+}
