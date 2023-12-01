@@ -6,13 +6,13 @@
 
 body {
     width: 100%;
-    background: #eceef3; /* Cor ajustada para combinar com style.html e index.html */
+    background: #c1c1c1; /* Cor ajustada para combinar com style.html e index.html */
     font-family: 'Arial', sans-serif;
     color: #000; /* Cor do texto ajustada para um contraste melhor */
 }
 
 .top {
-    background: linear-gradient(to bottom, #ffffff8a, #ffffff, #ffffff);
+    background: linear-gradient(to bottom, #ffffff, #ffffff, #ffffff);
     width: 100%;
     height: 20vh;
     display: flex;
@@ -23,7 +23,7 @@ body {
 .title-top {
     color: #000;
     font-size: 2rem;
-    text-transform: uppercase;
+    
 }
 
 .down {
@@ -37,7 +37,7 @@ body {
 
 .main {
     width: 100%;
-    height: 100vh;
+    height: 48vh;
 }
 
 #carouselExample {
